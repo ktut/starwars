@@ -8,7 +8,7 @@ let app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-let PORT = 3000;
+let PORT = process.env.PORT || 3000;
 
 // Data
 var characters = [{
